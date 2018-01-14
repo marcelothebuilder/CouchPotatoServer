@@ -202,8 +202,8 @@ class BaseUpdater(Plugin):
 
 class GitUpdater(BaseUpdater):
 
-    old_repo = 'RuudBurger/CouchPotatoServer'
-    new_repo = 'CouchPotato/CouchPotatoServer'
+    old_repo = 'CouchPotato/CouchPotatoServer'
+    new_repo = 'marcelothebuilder/CouchPotatoServer'
 
     def __init__(self, git_command):
         self.repo = LocalRepository(Env.get('app_dir'), command = git_command)
